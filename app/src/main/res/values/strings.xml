@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">P5</string>
+    <string name="induce_fragment_text">Organize your folder tree</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
