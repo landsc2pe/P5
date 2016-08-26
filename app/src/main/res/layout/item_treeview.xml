@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="@color/colorBlack"
+    >
+
+    <TextView
+        android:id="@+id/item_tree_text"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite" />
+
+
+</LinearLayout>

@@ -20,7 +20,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         String rootPath = Environment.getExternalStorageDirectory().getAbsolutePath();
-        treePath = rootPath + Paths.TREE_FOLDER_NAME;
+        treePath = rootPath + StringPath.TREE_FOLDER_NAME;
         recentPath = treePath;
     }
 }

@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGray"
-    android:backgroundTint="#787878"
     android:orientation="vertical">
 
     <android.support.design.widget.TextInputLayout

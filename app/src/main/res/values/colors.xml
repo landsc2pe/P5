@@ -13,8 +13,9 @@
     <color name="colorLightGreen">#00af23</color>
     <color name="colorRed">#8a0000</color>
     <color name="colorOrange">#d5733b</color>
-    <color name="colorDeepOrange">#9e5020</color>
-    <color name="colorGray">#2f2e2e</color>
+    <color name="colorDeepOrange">#b45c25</color>
+    <color name="colorDeepOrange2">#80411a</color>
+    <color name="colorGray">#b32f2e2e</color>
 
 
     <color name="colorToolbar">#0091e4</color>
