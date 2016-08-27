@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -67,6 +68,7 @@ public class Tab2Fragment extends Fragment {
 
             @Override
             public void onClick(int position) {
+                if(LogTag.DEBUG) Log.d(TAG, "position : " + position);
 
                 clickedFile = treeData.get(position).getAbsoluteFile();
                 clickedPath = treeData.get(position).getAbsolutePath();
@@ -88,16 +90,16 @@ public class Tab2Fragment extends Fragment {
                     treeData.addAll(position + 1, dataCache);
                     tab2Adapter.notifyDataSetChanged();
                 }
-
-
             }
 
             private void dataRemove() {
                 Iterator<File> iterator = snapshotIterator(treeData);
                 while (iterator.hasNext()) {
                     File file = iterator.next();
-                    if (file.getAbsolutePath().contains(clickedName + "/"))
+                    if (file.getAbsolutePath().contains(clickedName + "/")) {
                         treeData.remove(file);
+                        //todo iterator.remove();
+                    }
 
                 }
                 if(LogTag.DEBUG) Toast.makeText(getContext(),"Collapsed",Toast.LENGTH_SHORT).show();

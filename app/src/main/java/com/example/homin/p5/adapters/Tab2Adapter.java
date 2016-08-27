@@ -46,6 +46,9 @@ public class Tab2Adapter extends RecyclerView.Adapter<Tab2Adapter.Tab2ViewHolder
         holder.itemtext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(LogTag.DEBUG) Log.d(TAG, "view : " + view + ", onItemClickListener : " +
+                    onItemClickListener);
+
                 onItemClickListener.onClick(position);
             }
         });
